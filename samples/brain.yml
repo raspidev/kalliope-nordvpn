@@ -1,0 +1,27 @@
+---
+
+  - name: "nordvpn-connect"
+    signals:
+      - order: "vpn connect"
+    neurons:
+      - nordvpn:
+          param: "c"
+      - say:
+          message: "Vous êtes connecté"
+
+  - name: "nordvpn-disconnect"
+    signals:
+      - order: "vpn déco"
+    neurons:
+      - nordvpn:
+          param: "d"
+      - say:
+          message: "Vous êtes déconnecté"
+
+  - name: "nordvpn-status"
+    signals:
+      - order: "vpn status"
+    neurons:
+      - nordvpn:
+          param: "status"
+

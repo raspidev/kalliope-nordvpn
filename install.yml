@@ -1,0 +1,6 @@
+- name: Kalliope nordvpn neuron install
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  become: true
+
